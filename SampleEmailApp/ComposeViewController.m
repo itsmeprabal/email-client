@@ -13,7 +13,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *toField;
 @property (weak, nonatomic) IBOutlet UITextField *subjectField;
 @property (weak, nonatomic) IBOutlet UITextView *bodyTextView;
-
+@property (weak, nonatomic) UserEmail *userEmail;
+@property (weak, nonatomic) IBOutlet UIButton *draftButton;
 @end
 
 @implementation ComposeViewController
@@ -21,6 +22,40 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    if (self.userEmail) {
+        [self configureToReply];
+    } else {
+        [self configureToCompose];
+    }
+}
+
+- (void)configureToCompose {
+    self.toField.text = @"";
+    self.toField.userInteractionEnabled = YES;
+    
+    self.subjectField.text = @"";
+    
+    self.bodyTextView.text = @"";
+    
+    self.draftButton.hidden = NO;
+    self.draftButton.userInteractionEnabled = YES;
+}
+
+- (void)configureToReply {
+    self.toField.text = self.userEmail.email.fromEmail.email;
+    self.toField.userInteractionEnabled = NO;
+    
+    self.subjectField.text = [NSString stringWithFormat:@"Re:%@", self.userEmail.email.subject];
+    
+    self.bodyTextView.text = @"";
+    
+    self.draftButton.hidden = YES;
+    self.draftButton.userInteractionEnabled = NO;
+}
+
+- (void)configureToReplyToEmail:(UserEmail *)userEmail {
+    self.userEmail = userEmail;
 }
 
 - (IBAction)saveDraft:(id)sender {
@@ -124,10 +159,19 @@
                                                                 preferredStyle:UIAlertControllerStyleAlert];
         
         UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
-                                                              handler:^(UIAlertAction * action) {}];
+                                                              handler:^(UIAlertAction * action) {
+                                                                  
+                                                                  dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                                                                      [self.navigationController popViewControllerAnimated:YES];
+                                                                      //[self dismissViewControllerAnimated:YES completion:nil];
+                                                                  });
+                                                                  
+                                                              }];
         
         [alert addAction:defaultAction];
-        [self presentViewController:alert animated:YES completion:nil];
+        [self presentViewController:alert animated:YES completion:^{
+            
+        }];
     });
 }
 

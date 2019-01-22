@@ -89,6 +89,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKE-M0-LA0">
+                                <rect key="frame" x="167" y="617" width="42" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.64705882349999999" green="0.25882352939999997" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Reply">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="replyTapped:" destination="JEX-9P-axG" eventType="touchUpInside" id="MSN-rP-YcZ"/>
+                                    <segue destination="m5y-TD-ccN" kind="show" identifier="reply_segue" id="hso-ze-S1O"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -124,6 +137,7 @@
                     <connections>
                         <outlet property="body" destination="AdO-GM-FxO" id="c5w-MQ-Enn"/>
                         <outlet property="fromEmailId" destination="Dza-gc-l0S" id="0Je-xc-r5j"/>
+                        <outlet property="replyButton" destination="fKE-M0-LA0" id="q5u-b8-lYO"/>
                         <outlet property="subject" destination="QxV-hs-EJS" id="Z5e-Du-8oi"/>
                         <outlet property="toEmailIds" destination="jyw-xk-umB" id="2Jw-I7-PhY"/>
                         <outlet property="type" destination="GL4-N8-s9c" id="SSQ-bP-bdX"/>
@@ -376,6 +390,7 @@
                     <navigationItem key="navigationItem" id="fX4-Zd-j3j"/>
                     <connections>
                         <outlet property="bodyTextView" destination="WxY-ug-pFb" id="kHI-LL-9kh"/>
+                        <outlet property="draftButton" destination="PxD-ld-Wqq" id="ye1-ew-lK6"/>
                         <outlet property="subjectField" destination="TVz-aX-sr7" id="N9h-Sg-cHK"/>
                         <outlet property="toField" destination="Vd5-6Y-eQa" id="zFs-Ys-YVB"/>
                     </connections>
@@ -421,5 +436,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="6S0-TO-JiA"/>
+        <segue reference="hso-ze-S1O"/>
     </inferredMetricsTieBreakers>
 </document>

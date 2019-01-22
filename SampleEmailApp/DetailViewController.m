@@ -9,6 +9,7 @@
 #import "DetailViewController.h"
 #import "User.h"
 #import "EmailData.h"
+#import "ComposeViewController.h"
 
 @interface DetailViewController ()
 @end
@@ -24,9 +25,13 @@
 }
 
 - (void)configure {
+    self.replyButton.userInteractionEnabled = NO;
+    self.replyButton.hidden = YES;
     switch (self.category) {
         case 0:
             [self configureInboxItem:(UserEmail *)self.data];
+            self.replyButton.userInteractionEnabled = YES;
+            self.replyButton.hidden = NO;
             break;
             
         case 1:
@@ -95,6 +100,17 @@
     
     self.body.text = draft.body;
     self.isConfigured = YES;
+}
+
+- (IBAction)replyTapped:(id)sender {
+    
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"reply_segue"]) {
+        ComposeViewController *composer = (ComposeViewController *)[segue destinationViewController];
+        [composer configureToReplyToEmail:(UserEmail *)self.data];
+    }
 }
 
 @end

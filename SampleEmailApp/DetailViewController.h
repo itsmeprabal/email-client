@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UITextView *body;
 @property (weak, nonatomic) IBOutlet UILabel *type;
 @property (assign, nonatomic) BOOL isConfigured;
+@property (weak, nonatomic) IBOutlet UIButton *replyButton;
 
 @property (nonatomic, assign) NSInteger category;
 @property (nonatomic, strong) NSObject *data;
