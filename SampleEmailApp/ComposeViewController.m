@@ -110,9 +110,15 @@
     NSString *subject = _subjectField.text;
     NSString *body = _bodyTextView.text;
     
-    NSMutableURLRequest *urlRequest = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://localhost:9000/emails/send"]];
-    
-    NSDictionary *paramsDict = [NSDictionary dictionaryWithObjectsAndKeys:[EmailData getInstance].email, @"emailSender", to, @"emailRecepients", subject, @"emailSubject", body, @"emailBody", nil];
+    NSMutableURLRequest *urlRequest;
+    NSDictionary *paramsDict;
+    if (self.userEmail) {
+        urlRequest = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://localhost:9000/emails/replyToEmail"]];
+        paramsDict = [NSDictionary dictionaryWithObjectsAndKeys:[EmailData getInstance].email, @"emailSender", to, @"emailRecepients", subject, @"emailSubject", body, @"emailBody", _userEmail.id, @"userEmailId", nil];
+    } else {
+        urlRequest = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:@"http://localhost:9000/emails/send"]];
+        paramsDict = [NSDictionary dictionaryWithObjectsAndKeys:[EmailData getInstance].email, @"emailSender", to, @"emailRecepients", subject, @"emailSubject", body, @"emailBody", nil];
+    }
     
     NSError *error;
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:paramsDict options:0 error:&error];
