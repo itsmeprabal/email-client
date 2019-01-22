@@ -146,7 +146,7 @@
         }
         else
         {
-            [self showAlertWithTitle:@"Draft Failed" andSubtitle:@"Check all fields"];
+            [self showAlertWithTitle:@"Email Failed" andSubtitle:@"Check all fields"];
         }
     }];
     [dataTask resume];
