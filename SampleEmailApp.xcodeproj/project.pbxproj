@@ -1,0 +1,456 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB94517B21F6B353003C36DB /* ComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB94517A21F6B353003C36DB /* ComposeViewController.m */; };
+		BB94517E21F6C1F2003C36DB /* SplitViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB94517D21F6C1F2003C36DB /* SplitViewDelegate.m */; };
+		BBFDCD2221F63A8D00561457 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFDCD2121F63A8D00561457 /* AppDelegate.m */; };
+		BBFDCD2521F63A8D00561457 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFDCD2421F63A8D00561457 /* MasterViewController.m */; };
+		BBFDCD2821F63A8D00561457 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFDCD2721F63A8D00561457 /* DetailViewController.m */; };
+		BBFDCD2B21F63A8D00561457 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBFDCD2921F63A8D00561457 /* Main.storyboard */; };
+		BBFDCD2D21F63A9000561457 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBFDCD2C21F63A9000561457 /* Assets.xcassets */; };
+		BBFDCD3021F63A9000561457 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBFDCD2E21F63A9000561457 /* LaunchScreen.storyboard */; };
+		BBFDCD3321F63A9000561457 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFDCD3221F63A9000561457 /* main.m */; };
+		BBFDCD3B21F63E8600561457 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFDCD3A21F63E8600561457 /* LoginViewController.m */; };
+		BBFDCD3E21F64DB000561457 /* EmailData.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFDCD3D21F64DB000561457 /* EmailData.m */; };
+		BBFDCD4121F64EB600561457 /* Email.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFDCD4021F64EB600561457 /* Email.m */; };
+		BBFDCD4421F64EF100561457 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFDCD4321F64EF100561457 /* User.m */; };
+		BBFDCD4721F64FBF00561457 /* UserEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFDCD4621F64FBF00561457 /* UserEmail.m */; };
+		BBFDCD4A21F6509B00561457 /* Draft.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFDCD4921F6509B00561457 /* Draft.m */; };
+		BBFDCD4D21F6591B00561457 /* JSONModel+Subclass.m in Sources */ = {isa = PBXBuildFile; fileRef = BBFDCD4C21F6591B00561457 /* JSONModel+Subclass.m */; };
+		EFF68648B205355D25B220AA /* libPods-SampleEmailApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F472FEBE8F3240EB2597ACE0 /* libPods-SampleEmailApp.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		82717C17BFE6D360378236C5 /* Pods-SampleEmailApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleEmailApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SampleEmailApp/Pods-SampleEmailApp.debug.xcconfig"; sourceTree = "<group>"; };
+		9790E470A1223DE9A39DB50D /* Pods-SampleEmailApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SampleEmailApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SampleEmailApp/Pods-SampleEmailApp.release.xcconfig"; sourceTree = "<group>"; };
+		BB94517921F6B353003C36DB /* ComposeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComposeViewController.h; sourceTree = "<group>"; };
+		BB94517A21F6B353003C36DB /* ComposeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ComposeViewController.m; sourceTree = "<group>"; };
+		BB94517C21F6C1F2003C36DB /* SplitViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplitViewDelegate.h; sourceTree = "<group>"; };
+		BB94517D21F6C1F2003C36DB /* SplitViewDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplitViewDelegate.m; sourceTree = "<group>"; };
+		BBFDCD1D21F63A8D00561457 /* SampleEmailApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleEmailApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBFDCD2021F63A8D00561457 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BBFDCD2121F63A8D00561457 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BBFDCD2321F63A8D00561457 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		BBFDCD2421F63A8D00561457 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		BBFDCD2621F63A8D00561457 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		BBFDCD2721F63A8D00561457 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		BBFDCD2A21F63A8D00561457 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BBFDCD2C21F63A9000561457 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BBFDCD2F21F63A9000561457 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BBFDCD3121F63A9000561457 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBFDCD3221F63A9000561457 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BBFDCD3921F63E8600561457 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		BBFDCD3A21F63E8600561457 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		BBFDCD3C21F64DB000561457 /* EmailData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmailData.h; sourceTree = "<group>"; };
+		BBFDCD3D21F64DB000561457 /* EmailData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmailData.m; sourceTree = "<group>"; };
+		BBFDCD3F21F64EB600561457 /* Email.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Email.h; sourceTree = "<group>"; };
+		BBFDCD4021F64EB600561457 /* Email.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Email.m; sourceTree = "<group>"; };
+		BBFDCD4221F64EF100561457 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		BBFDCD4321F64EF100561457 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		BBFDCD4521F64FBF00561457 /* UserEmail.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserEmail.h; sourceTree = "<group>"; };
+		BBFDCD4621F64FBF00561457 /* UserEmail.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserEmail.m; sourceTree = "<group>"; };
+		BBFDCD4821F6509B00561457 /* Draft.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Draft.h; sourceTree = "<group>"; };
+		BBFDCD4921F6509B00561457 /* Draft.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Draft.m; sourceTree = "<group>"; };
+		BBFDCD4B21F6591B00561457 /* JSONModel+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONModel+Subclass.h"; sourceTree = "<group>"; };
+		BBFDCD4C21F6591B00561457 /* JSONModel+Subclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONModel+Subclass.m"; sourceTree = "<group>"; };
+		F472FEBE8F3240EB2597ACE0 /* libPods-SampleEmailApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SampleEmailApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBFDCD1A21F63A8D00561457 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFF68648B205355D25B220AA /* libPods-SampleEmailApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49D22A77D88CF175E1F21973 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F472FEBE8F3240EB2597ACE0 /* libPods-SampleEmailApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F2C172AAFF1AD1CB4F3991A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				82717C17BFE6D360378236C5 /* Pods-SampleEmailApp.debug.xcconfig */,
+				9790E470A1223DE9A39DB50D /* Pods-SampleEmailApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BBFDCD1421F63A8D00561457 = {
+			isa = PBXGroup;
+			children = (
+				BBFDCD1F21F63A8D00561457 /* SampleEmailApp */,
+				BBFDCD1E21F63A8D00561457 /* Products */,
+				9F2C172AAFF1AD1CB4F3991A /* Pods */,
+				49D22A77D88CF175E1F21973 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BBFDCD1E21F63A8D00561457 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBFDCD1D21F63A8D00561457 /* SampleEmailApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBFDCD1F21F63A8D00561457 /* SampleEmailApp */ = {
+			isa = PBXGroup;
+			children = (
+				BBFDCD2021F63A8D00561457 /* AppDelegate.h */,
+				BBFDCD2121F63A8D00561457 /* AppDelegate.m */,
+				BBFDCD2321F63A8D00561457 /* MasterViewController.h */,
+				BBFDCD2421F63A8D00561457 /* MasterViewController.m */,
+				BBFDCD2621F63A8D00561457 /* DetailViewController.h */,
+				BBFDCD2721F63A8D00561457 /* DetailViewController.m */,
+				BBFDCD2921F63A8D00561457 /* Main.storyboard */,
+				BBFDCD2C21F63A9000561457 /* Assets.xcassets */,
+				BBFDCD2E21F63A9000561457 /* LaunchScreen.storyboard */,
+				BBFDCD3121F63A9000561457 /* Info.plist */,
+				BBFDCD3221F63A9000561457 /* main.m */,
+				BBFDCD3921F63E8600561457 /* LoginViewController.h */,
+				BBFDCD3A21F63E8600561457 /* LoginViewController.m */,
+				BBFDCD3C21F64DB000561457 /* EmailData.h */,
+				BBFDCD3D21F64DB000561457 /* EmailData.m */,
+				BBFDCD3F21F64EB600561457 /* Email.h */,
+				BBFDCD4021F64EB600561457 /* Email.m */,
+				BBFDCD4221F64EF100561457 /* User.h */,
+				BBFDCD4321F64EF100561457 /* User.m */,
+				BBFDCD4521F64FBF00561457 /* UserEmail.h */,
+				BBFDCD4621F64FBF00561457 /* UserEmail.m */,
+				BBFDCD4821F6509B00561457 /* Draft.h */,
+				BBFDCD4921F6509B00561457 /* Draft.m */,
+				BBFDCD4B21F6591B00561457 /* JSONModel+Subclass.h */,
+				BBFDCD4C21F6591B00561457 /* JSONModel+Subclass.m */,
+				BB94517921F6B353003C36DB /* ComposeViewController.h */,
+				BB94517A21F6B353003C36DB /* ComposeViewController.m */,
+				BB94517C21F6C1F2003C36DB /* SplitViewDelegate.h */,
+				BB94517D21F6C1F2003C36DB /* SplitViewDelegate.m */,
+			);
+			path = SampleEmailApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BBFDCD1C21F63A8D00561457 /* SampleEmailApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBFDCD3621F63A9000561457 /* Build configuration list for PBXNativeTarget "SampleEmailApp" */;
+			buildPhases = (
+				7383CF4622C49FFF8CAA0EC0 /* [CP] Check Pods Manifest.lock */,
+				BBFDCD1921F63A8D00561457 /* Sources */,
+				BBFDCD1A21F63A8D00561457 /* Frameworks */,
+				BBFDCD1B21F63A8D00561457 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SampleEmailApp;
+			productName = SampleEmailApp;
+			productReference = BBFDCD1D21F63A8D00561457 /* SampleEmailApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBFDCD1521F63A8D00561457 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = pc;
+				TargetAttributes = {
+					BBFDCD1C21F63A8D00561457 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = BBFDCD1821F63A8D00561457 /* Build configuration list for PBXProject "SampleEmailApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BBFDCD1421F63A8D00561457;
+			productRefGroup = BBFDCD1E21F63A8D00561457 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBFDCD1C21F63A8D00561457 /* SampleEmailApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBFDCD1B21F63A8D00561457 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBFDCD3021F63A9000561457 /* LaunchScreen.storyboard in Resources */,
+				BBFDCD2D21F63A9000561457 /* Assets.xcassets in Resources */,
+				BBFDCD2B21F63A8D00561457 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7383CF4622C49FFF8CAA0EC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SampleEmailApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBFDCD1921F63A8D00561457 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBFDCD4421F64EF100561457 /* User.m in Sources */,
+				BBFDCD4D21F6591B00561457 /* JSONModel+Subclass.m in Sources */,
+				BBFDCD2521F63A8D00561457 /* MasterViewController.m in Sources */,
+				BB94517B21F6B353003C36DB /* ComposeViewController.m in Sources */,
+				BB94517E21F6C1F2003C36DB /* SplitViewDelegate.m in Sources */,
+				BBFDCD4721F64FBF00561457 /* UserEmail.m in Sources */,
+				BBFDCD2221F63A8D00561457 /* AppDelegate.m in Sources */,
+				BBFDCD4121F64EB600561457 /* Email.m in Sources */,
+				BBFDCD3E21F64DB000561457 /* EmailData.m in Sources */,
+				BBFDCD3321F63A9000561457 /* main.m in Sources */,
+				BBFDCD4A21F6509B00561457 /* Draft.m in Sources */,
+				BBFDCD2821F63A8D00561457 /* DetailViewController.m in Sources */,
+				BBFDCD3B21F63E8600561457 /* LoginViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BBFDCD2921F63A8D00561457 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBFDCD2A21F63A8D00561457 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BBFDCD2E21F63A9000561457 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBFDCD2F21F63A9000561457 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BBFDCD3421F63A9000561457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BBFDCD3521F63A9000561457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BBFDCD3721F63A9000561457 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82717C17BFE6D360378236C5 /* Pods-SampleEmailApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q5F5XS7GD3;
+				INFOPLIST_FILE = SampleEmailApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pc.SampleEmailApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BBFDCD3821F63A9000561457 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9790E470A1223DE9A39DB50D /* Pods-SampleEmailApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q5F5XS7GD3;
+				INFOPLIST_FILE = SampleEmailApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pc.SampleEmailApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBFDCD1821F63A8D00561457 /* Build configuration list for PBXProject "SampleEmailApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBFDCD3421F63A9000561457 /* Debug */,
+				BBFDCD3521F63A9000561457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBFDCD3621F63A9000561457 /* Build configuration list for PBXNativeTarget "SampleEmailApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBFDCD3721F63A9000561457 /* Debug */,
+				BBFDCD3821F63A9000561457 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BBFDCD1521F63A8D00561457 /* Project object */;
+}
